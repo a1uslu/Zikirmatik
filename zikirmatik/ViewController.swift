@@ -12,8 +12,8 @@ class ViewController: UIViewController {
  @IBOutlet weak var testbaglantisiLabel: UILabel!
  @IBOutlet weak var toplamLabel: UILabel!
  
-    @IBOutlet weak var countButton: UIButton!
-    var toplam:Int = 0
+ @IBOutlet weak var countButton: UIButton!
+ var toplam:Int = 0
  var sifirla:Int = 0
  var myName:String = "Hedef Sayı Belirlenmedi"
  var sayiBitti = 0
@@ -28,18 +28,18 @@ class ViewController: UIViewController {
  }
  
  @IBAction func basButon(_ sender: Any) {
-//  if toplamLabel.text != testbaglantisiLabel.text{
-//   toplam += 1
-//   toplamLabel.text = "\(toplam)"
-//  }
-//  if toplamLabel.text == testbaglantisiLabel.text,
-//     toplamLabel.text == "Ok."{
-//   toplamLabel.text = "Ok."
-//   toplam = 0
-//   
-//  } else{
-//  }
-//  
+  //  if toplamLabel.text != testbaglantisiLabel.text{
+  //   toplam += 1
+  //   toplamLabel.text = "\(toplam)"
+  //  }
+  //  if toplamLabel.text == testbaglantisiLabel.text,
+  //     toplamLabel.text == "Ok."{
+  //   toplamLabel.text = "Ok."
+  //   toplam = 0
+  //
+  //  } else{
+  //  }
+  //
   guard let counterStr = toplamLabel.text,
         let count = Int(counterStr) else { return }
   
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
    toplam += 1
    toplamLabel.text = "\(toplam)"
   }
-//
+  //
  }
  
  @IBAction func silButon(_ sender: Any) {
